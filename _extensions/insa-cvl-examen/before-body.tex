@@ -1,0 +1,34 @@
+\usepackage{relsize}
+\usepackage[per-mode=symbol]{siunitx}
+\usepackage{enumerate,enumitem}
+\setlist{nolistsep,noitemsep}
+\setlist[enumerate,itemize]{leftmargin=*}
+\setlist[itemize,1]{label={•}}
+\setlist[itemize,2]{label={\bfseries–}}
+
+\usepackage[ilines, headsepline]{scrlayer-scrpage}
+\clearscrheadfoot
+\lehead[Nom \& Prénom(s):]{Nom \& Prénom(s):}
+\lohead[Nom \& Prénom(s):]{Nom \& Prénom(s):}
+%\cfoot{\pagemark}
+\rofoot{\pagemark}{}
+\lefoot{\pagemark}
+$if(formation)$
+\lofoot{\footnotesize\the\year, $formation$}
+\refoot{\footnotesize\the\year, $formation$}
+$endif$
+
+
+%totalnumber (default 3) is the maximum number of floats on a text (!) page
+\setcounter{totalnumber}{8}
+%topnumber (default 2) is the maximum number of floats in the top area
+\setcounter{topnumber}{8}
+%bottomnumber (default 1) is the maximum number of floats in the bottom area
+\setcounter{bottomnumber}{8}
+% %\topfraction (default 0.7) maximum size of the top area
+\renewcommand{\topfraction}{0.9}
+% %\bottomfraction (default 0.3) maximum size of the bottom area
+\renewcommand{\bottomfraction}{0.9}
+% %\textfraction (default 0.2) minimum size of the text area, i.e., the area that must not be occupied by floats
+\renewcommand{\textfraction}{0.01}
+\renewcommand{\floatpagefraction}{.9}%

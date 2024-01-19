@@ -1,0 +1,28 @@
+---
+title: "Examen de Composants Electroniques"
+format:
+  insa-cvl-examen-pdf: default
+#author: David Folio
+formation: "formation"
+institute: "INSA Centre Val de Loire"
+date: last-modified
+---
+
+
+::: {.center data-latex=""}
+# Avant de commencer {#avant-de-commencer .unnumbered}
+
+```{=tex}
+\vspace{-\baselineskip}
+\smaller
+```
+::: callout-note
+-   Il est conseillé de prendre connaissance rapidement de la totalité du texte du sujet.
+-   Si vous compléter une des figures, joignez là à votre copie en précisant vos nom et prénom.
+-   Utilisez les valeurs littérales si vous n'avez pas la valeur numérique d'une grandeur.
+-   Vous pouvez faire des hypothèses raisonnables pour étayer vos réponses.
+:::
+:::
+
+# Exercice 
+

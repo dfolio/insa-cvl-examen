@@ -1,0 +1,35 @@
+title: Insa-cvl-examen
+author: David Folio
+version: 1.0.0
+quarto-required: ">=1.4.0"
+lang: fr-FR
+contributes:
+  formats:
+    common:
+      crossref:
+        chapters: false
+        eq-prefix:
+        eq-labels: (roman)
+        fig-title: Fig.
+        fig-prefix: Fig.
+      link-citations: true
+      execute:
+        echo: false
+        warning: false
+        freeze: true
+    pdf:
+      toc: false      
+      template-partials:
+        before-body.tex
+      header-includes: |
+        \usepackage{physics}
+        \usepackage[version=3]{mhchem}
+        \usepackage{float}
+        \floatplacement{table}{htb}
+#      include-in-header: header.tex
+      polyglossia-lang.name: french
+      fontsize: 12pt
+      graphics: true
+      classoption: twoside
+      geometry: [a4paper,headsep=12pt,footskip=1.5em,hmargin=2.cm,vmargin=2cm,centering]
+
